@@ -1,25 +1,22 @@
 <h1>JobFinder</h1>
 
-<%# <div class="search-bar">
-  <%= form_with url: vacancies_path, method: :get, class: "d-flex my-3" do %>
-    <%# <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Find an island"
-    %>
-    <%# <%= submit_tag "Search", class: "btn btn-search" %>
-  <%# <% end %>
-<%# </div> %>
 
-<%# <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path "https://res.cloudinary.com/dm6g22zui/image/upload/v1669120244/eyc9tqyxuet2v9uqwj03.jpg"%>
-  <%# <div class="container">
-    <h1>Find your perfect island paradise</h1>
-    <p></p>
-    <p></p>
-    <p>Looking for a private island but not sure where to start?</p>
-    <p>We have islands for rent that are not available anywhere else.</p>
-    <p>It is time to tropic like its hot.</p>
-    <p>Search all our islands </p>
-    <a class="btn-search-home" href="/islands">Search Islands</a>
-  </div> %>
-<%# </div> %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>JobFinder brings <strong>employers</strong> to <strong>talented people</strong>!</h1>
+    <p>Find the right role for you and change your life today</p>
+    <div class="search-bar">
+      <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get">
+        <div class="search-form-control form-group">
+          <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Enter Keyword ..." />
+        </div>
+        <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get">
+        <div class="search-form-control form-group">
+          <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Enter Location ..." />
+        </div>
+        <button name="button" type="submit" class="btn btn-gradient" >
+          <i class="fas fa-search"></i> <a href="/vacancies">Find</a>
+        </button>
+      </form>
+  </div>
+</div>
