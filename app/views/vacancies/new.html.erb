@@ -1,0 +1,9 @@
+<div class="container" style="width: 50%">
+  <%= simple_form_for @vacancy do |f| %>
+    <%= f.input :job_title %>
+    <%= f.input :job_description %>
+    <%= f.input :job_location %>
+    <%= f.input :job_salary%>
+    <%= f.button :submit, class: "btn-search" %>
+  <% end %>
+</div>
