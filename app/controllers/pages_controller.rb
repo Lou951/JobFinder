@@ -4,6 +4,4 @@ class PagesController < ApplicationController
   def home
   end
 
-  def vacancies
-  end
 end
