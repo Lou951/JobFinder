@@ -3,18 +3,20 @@
   <div class="container" id="card-containers">
     <div class="row">
       <% @vacancies.each do |vacancy| %>
-        <div class="col-lg-6">
-          <div class="card-trip">
-            <div class="card-trip-infos">
-              <div>
-                <h1><%= vacancy.job_title %></h1>
-                <h2><%= vacancy.job_location %></h2>
-                <p><%= vacancy.job_description %></p>
+        <div class="col-lg-3">
+          <%= link_to vacancy_path(vacancy), class:"text-decoration-none picture" do %>
+            <div class="card-trip">
+              <div class="card-trip-infos">
+                <div>
+                  <h1><%= vacancy.job_title %></h1>
+                  <h2><%= vacancy.job_location %></h2>
+                  <p><%= vacancy.job_description %></p>
+                </div>
+                <h2 class="card-trip-pricing">£<%= vacancy.job_salary %></h2>
+                <%# <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> %>
               </div>
-              <h2 class="card-trip-pricing">£<%= vacancy.job_salary %></h2>
-              <%# <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> %>
             </div>
-          </div>
+          <% end %>
          </div>
       <% end %>
     </div>
