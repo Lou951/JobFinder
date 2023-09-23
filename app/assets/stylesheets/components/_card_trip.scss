@@ -4,6 +4,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-top: 20px;
   margin-bottom: 20px;
+  border-color: $pumpkin;
 }
 
 .card-trip > img {
@@ -26,8 +27,8 @@
 
 
 .card-trip .card-trip-infos {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 16px;
   display: flex;
   justify-content: space-between;
